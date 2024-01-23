@@ -1,0 +1,242 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#web{
+    margin: 20px 50px;
+    width: 1130px;
+}
+.header{
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    
+}
+.header img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+}
+header h1{
+    padding-top: 30px;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    margin-left: 120px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+header span{
+    color: #2e6ca1;
+}
+.slogan h2{
+    background:linear-gradient(#1e5483, #507fa8, #235988 );
+    padding: 20px;
+    padding-left: 50px;
+    font-size:40px;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+#wrapper{
+    display: flex;
+    width: 1200px;
+}
+#aside-izq{
+    width: 240px;
+    margin-right: 48px;
+}
+.internet{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.internet h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    font-weight:bold;
+    padding-left: 10px;
+}
+.internet h3 span{
+    color: red;
+}
+.internet p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 12px;
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.internet p span{
+    color: #2e6ca1;
+}
+#video{
+    background-color: #2e6ca1;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 220px;
+    color: white;
+    font-size:larger;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #1e5483;
+    border: #1e5483;
+}
+#more{
+    background-color: rgb(243, 101, 50);
+    margin-top: 5px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 220px;
+    color: white;
+    font-size:larger;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #83541e;
+    border:#83541e
+}
+#aside-izq hr{
+    border: 1px solid #76818a;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.imagenninja{
+    background-image: url(../images/ad_background.png);
+    height: 300px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+.imagenninja h3{
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+.imagenninja img{
+    width: 100px;
+    align-items: center;
+    margin-top: 5px;
+}
+.imagenninja button{
+    background-color: #2cc7df;
+    margin-top: 40px;
+    padding: 10px;
+    width: 200px;
+    color: white;
+    font-size:larger;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #1e5483;
+    border: #1e5483;
+}
+#maincontent{
+    width: 820px;
+}
+#contact{
+    display: flex;
+    justify-content: space-between;
+}
+.dns{
+    display: flex;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.dns img{
+    width: 30px;
+    height: 30px;
+}
+.dns h2{
+    color: #2e6ca1;
+    padding-top: 5px;
+    padding-left: 8px; 
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.info img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.info h2{
+    font-size: 37px;
+    color: #2cc7df;
+}
+#maincontent hr{
+    border: 1px solid #61676d;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.textbody h3{
+    color: #2e6ca1;
+    margin-bottom: 5px;
+    font-size:x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.textbody p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-justify: distribute;
+}
+span{
+    color: #2cc7df;
+}
+.bold{
+    font-weight: bold;
+    color: black;
+}
+.textbody ul{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-left: 40px;
+}
+.textbody li{
+    padding-top: 10px;
+}
+.clientserver img{
+    height: 150px;
+    display: block;
+    margin:auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.clientserver ol{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding-left: 40px;
+}
+.thebig3{
+    border:6px solid  #2e6ca1;
+    padding: 16px;
+    margin-top: 20px;
+    display: flex;
+}
+.thebig3 img{
+    width: 161px;
+    height: 119px;
+}
+#textbig{
+    padding-left: 20px;
+}
+#textbig h3{
+    color: #2e6ca1;
+    font-size:x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#textbig p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-justify: distribute;
+    padding-top: 8px;
+}
+#textbig p a{
+    text-decoration: none;
+}
+
+.here{
+    color: #2cc7df;
+}
