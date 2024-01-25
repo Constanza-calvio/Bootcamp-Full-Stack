@@ -1,0 +1,115 @@
+*{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .wrapper{
+
+        width: 950px;
+        background-color: silver;
+        margin: 100px auto;
+        padding: 30px;
+        border: 10px solid powderblue;
+        display: inline-block;
+
+    }
+    
+    .header{
+        height: 150px;
+        background-color: gold;
+        margin-bottom: 10px;
+    }    
+
+    .navigation{
+        min-height: 300px;
+        width: 200px;
+        background-color: mediumturquoise;
+        display: inline-block;
+        padding: 10px;
+    
+    }
+
+    .main_content{
+        min-height: 400px;
+        width: 700px;
+        background-color: palegreen;
+        display: inline-block;
+        vertical-align: top;
+        padding: 13px;
+
+    }
+
+    .subcontents{
+        height: 200px;
+        width: 210px;
+        background-color: royalblue;
+        display: inline-block;
+        margin-right: 11px;
+
+    }
+
+    .advertisement{
+        min-height: 120px;
+        width: 660px;
+        background-color: purple;
+            
+    }
+
+/* Media Queries */
+/* (dispositivos móviles) */
+@media only screen and (max-width: 480px) {
+    .wrapper{
+        width: calc(100% - 100px); /* Ajusta según el margen deseado */
+    }
+    .navigation{
+        display: none; /* Si decides no mostrar la navegación */
+    }
+    .header {
+        width: calc(100% - 10px);
+    }
+    .subcontents{
+        width: 100%;
+    }
+    .advertisement{
+        width: calc(100% - 0px);
+    }
+    .main_content{
+        width: calc(100% - 30px);
+    }
+}
+
+
+/*  (tabletas) */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .wrapper{
+        width: calc(100% - 10px);
+    }
+    .navigation{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .main_content{
+        width: calc(100% - 30px);
+    }
+    .advertisement{
+        width: calc(100% - 20px);
+    }
+    .subcontents {
+        width: calc(70% - 205px); /* Ajusta para dos en una fila o 100% para una sola columna */
+        margin-bottom: 10px;
+    }
+    .subcontents:nth-child(3) {
+        /* Limpia el flujo para forzarlo debajo de los otros dos */
+        clear: both;
+        /* Opcionalmente, puedes ajustar el ancho si quieres que coincida con los otros dos */
+        width: calc(70% - 205px); /* Ajusta según el margen deseado */
+    }
+}
+
+
+/* (desktop) */
+@media only screen and (min-width: 1024px) {
+
+}
