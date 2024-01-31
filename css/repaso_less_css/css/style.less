@@ -1,0 +1,100 @@
+
+//CUANDO USO LESS, TENGO QUE ABRIR EL CMD ( A ELECCION) Y 
+//DIRIGIRME A LA CARPETA DONDE ESTA MI PROYECTO Y SU CSS, LUEGO EJECUTO LESSC NOMBRE.LESS NOMBRE.CSS 
+//Y GENERAS LOS CAMBIOS PARA QUE COMPILE EL ARCHIVO CSS. ( HAY QUE INSTALAR LESS EN CMD)
+//EN LESS PUEDO DEFINIR VARIABLES QUE PUEDO REUTILIZAR EN EL CODIGO 
+//VARIABLES
+@color-letra:rgb(74, 63, 168);
+@font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+@fondo: rgb(233, 178, 61);
+
+
+
+
+body{
+background-color:white;
+padding:20px;
+}
+
+h1{
+    color:@color-letra;
+    text-align: center;
+    font-weight: 500;
+    font-size: 4em;
+    font-family: @font;
+}
+
+section{
+    font-family:@font;
+}
+
+//PUEDO REALIZACION ANIDACIONES DENTRO DE LESS
+nav{ 
+    margin-left: 100px;
+.links{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: @fondo;
+        width:90%;
+    ul{
+        padding:10px;
+
+        a{
+         text-decoration: none;
+         margin: 65px;
+         font-family: @font;
+         
+         }
+       }
+     }
+}
+
+
+
+//SE PUEDEN AGREGAR MIXINS O FUNCIONES  QUE SIRVEN PARA DETERMINAR ESTILOS SIN NECESIDAD DE CREAR UNA CLASE O ID EN HTML 
+.estilizar_caja{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.todas-cajas{
+    .estilizar_caja();
+    margin-left: 120px;
+
+}
+
+h5{
+    font-family: @font;
+    font-size: 1em;
+    color: @color-letra;
+    text-align: center;
+}
+p{
+    font-family: @font;
+    font-size: 1em;
+    text-align: center;
+
+}
+.caja{
+    width: 70%;
+}
+
+section{
+    font-family: @font;
+    font-size: medium;
+    font-style: oblique;
+    margin-top: 25px;
+    margin-left: 110px;
+    text-align: center;
+    width: 85%;
+}
+
+
+//TAMBIEN PUEDO HACER OPERACIONES MATEMATICAS A LA HORA DE DETERMINAR UN ESTILO A UNA ETIQUETA
+//COMO   WIDTH:25% *2 ETC
